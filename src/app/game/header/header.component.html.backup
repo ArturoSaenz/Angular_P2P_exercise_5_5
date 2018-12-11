@@ -1,0 +1,5 @@
+<p>
+  {{ (_stateService.state$ | async).turn == 'PLAYER X' ? "Turn of Player 1 - Xs" : "Turn of Player 2 - 0s"  }}
+  {{ (_stateService.state$ | async).winner == 'There is a winner, Player 1 - Xs' ? "There is a winner, Player 1 - Xs" : "Hola" }}
+  {{ (_stateService.state$ | async).turn == '' ? " " : "NO chuta"  }}
+</p>
