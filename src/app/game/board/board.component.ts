@@ -17,6 +17,10 @@ export class BoardComponent implements OnInit {
    }
 
   ngOnInit() {
-  }
+    }
 
+    _handleSaveGameClick(){
+      console.log("SaveGame clicked");
+
+  }
 }

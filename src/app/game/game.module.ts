@@ -5,12 +5,14 @@ import { HeaderComponent } from './header/header.component';
 import { BoardComponent } from './board/board.component';
 import { SquareComponent } from './square/square.component';
 import { StateService } from './state.service';
+import { FormsModule} from '@angular/forms';
 import { ResetbuttonComponent } from './resetbutton/resetbutton.component';
 
 @NgModule({
   declarations: [GameComponent, HeaderComponent, BoardComponent, SquareComponent, ResetbuttonComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     GameComponent

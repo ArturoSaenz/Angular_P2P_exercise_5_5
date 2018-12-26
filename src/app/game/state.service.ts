@@ -7,7 +7,8 @@ export interface State {
     iswinner : boolean,
     iswinnerO : boolean,
     winner: string,
-    values: string[][]
+    values: string[][],
+    player_name : string
 }
 
 @Injectable({
@@ -29,7 +30,8 @@ export class StateService {
 	      ['-','-','-'],
 	      ['-','-','-'],
 	      ['-','-','-']
-	    ]
+      ],
+      player_name: ''
 	  };
 
 	  this._state$ = new BehaviorSubject(initialState);
@@ -137,7 +139,8 @@ export class StateService {
         ['-','-','-'],
         ['-','-','-'],
         ['-','-','-']
-      ]
+      ],
+      player_name : ''
     };
   }
 
